@@ -1,0 +1,155 @@
+/* Fonts */
+@font-face {
+    font-family: digital-7;
+    src: url(/assets/fonts/digital-7\ \(mono\).ttf);
+    src: url(/assets/fonts/digital-7\ \(mono\ italic\).ttf);
+    src: url(/assets/fonts/digital-7\ \(italic\).ttf);
+    src: url(/assets/fonts/digital-7.ttf);
+}
+
+
+
+/* Custim Arrow Clock CSS */
+
+/* Clock CSS */
+.second_border {
+    width: 510px;
+    height: 510px;
+    margin: 40px auto;
+    border-radius: 50%;
+    border: 28px solid #FF01B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+.second_clock{
+    width: 450px;
+    height: 450px;
+    margin: 0 auto;
+    background-image: url(/assets/media/Clock\ face\ 03.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px dotted #222;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.second_clock::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: #111;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.twoSec {
+    width: 0;
+    height: 255px;
+    transform: rotate(0deg);
+    display: flex;
+    justify-content: center;
+}
+.twoSec::before{
+    content: '';
+    width: 4px;
+    height: 140px;
+    border-radius: 10px;
+    background-image: url(/assets/media/Done\ Arrow\ 02.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: absolute;
+    top: -5px;
+}
+.twoMin {
+    width: 0;
+    height: 255px;
+    transform: rotate(36deg);
+    display: flex;
+    justify-content: center;
+}
+.twoMin::before{
+    content: '';
+    width: 4px;
+    height: 148px;
+    border-radius: 10px;
+    background-image: url(/assets/media/Done\ arrow\ 03.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: absolute;
+    top: -5px;
+}
+.twoHour {
+    width: 0;
+    height: 245px;
+    transform: rotate(161deg);
+    display: flex;
+    justify-content: center;
+}
+.twoHour::before{
+    content: '';
+    width: 4px;
+    height: 150px;
+    border-radius: 10px;
+    background-image: url(/assets/media/Done\ Arrow\ 01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 20px;
+    position: absolute;
+    top: -5px;
+}
+
+
+/* Calculator CSS */
+.calculator{
+    width: 350px;
+    background: #000;
+    margin: 40px auto;
+    border-radius: 5px;
+    padding: 10px 10px;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.skin {
+    width: 98%;
+    margin: 10px auto;
+    height: 104px;
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+.topMmonitor{
+    font-family: digital-7;
+    font-size: 35px;
+    font-weight: 500;
+    color: #000;
+}
+.bottomMonitor{
+    font-family: digital-7;
+    font-size: 50px;
+    font-weight: 500;
+    color: #000;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.calculator button{
+    width: 23%;
+    float: left;
+    padding: 10px;
+    font-size: 25px;
+    background: #efefef;
+    border: none;
+    border-radius: 3px;
+    margin: 1%;
+    color: #000;
+    font-weight: 500;
+}
